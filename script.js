@@ -1,5 +1,5 @@
 (function(){
-  /* ---------- Limba / Language ---------- */
+
   const EN = {
     'meta.title': 'Website Creation in Moldova | Cheap Web',
     'meta.desc': 'We build modern websites for small businesses in Moldova. Presentation sites, online shops, maintenance and SEO optimization. Request a quote.',
@@ -30,6 +30,9 @@
     'port.tag2': 'LANDING PAGE · STRĂȘENI',
     'port.text2': 'Presentation website for a beauty studio specializing in eyebrow services, with an elegant design, clear service information and a simple way to get in touch and book an appointment.',
     'port.side2': 'project<br>delivered &amp; maintained',
+    'port.tag3': 'LANDING PAGE · STRĂȘENI',
+    'port.text3': 'Presentation website for a nail studio, with an elegant design, clear information about manicure services and a simple way to get in touch and book an appointment.',
+    'port.side3': 'project<br>delivered &amp; maintained',
     'contact.title': 'Contact',
     'contact.lede': 'Write me a few words about your project — I’ll reply as soon as possible.',
     'contact.name': 'Name', 'contact.email': 'Email', 'contact.phone': 'Phone', 'contact.message': 'Message',
@@ -86,12 +89,12 @@
     b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang'), true); });
   });
 
-  // Limba implicită: română. Dacă vizitatorul a ales engleza, o ținem minte.
+ 
   let saved = null;
   try{ saved = localStorage.getItem('lang'); }catch(e){}
   if (saved === 'en') applyLang('en', false);
 
-  /* ---------- Formular de contact ---------- */
+  
   form.addEventListener('submit', function(e){
     e.preventDefault();
     const data = {
